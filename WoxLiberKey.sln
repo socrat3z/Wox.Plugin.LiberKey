@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{8298C926-1936-42CC-94FB-6C89BF516457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoxLiberKey", "WoxLiberKey\WoxLiberKey.csproj", "{4D501C2F-E9D9-4D97-85DE-D07EB06C1142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8298C926-1936-42CC-94FB-6C89BF516457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8298C926-1936-42CC-94FB-6C89BF516457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8298C926-1936-42CC-94FB-6C89BF516457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8298C926-1936-42CC-94FB-6C89BF516457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D501C2F-E9D9-4D97-85DE-D07EB06C1142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D501C2F-E9D9-4D97-85DE-D07EB06C1142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D501C2F-E9D9-4D97-85DE-D07EB06C1142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D501C2F-E9D9-4D97-85DE-D07EB06C1142}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED0ABBC4-7D61-4B7E-B4B1-C3B0C6CB4155}
+	EndGlobalSection
+EndGlobal
