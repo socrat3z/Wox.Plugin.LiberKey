@@ -35,6 +35,11 @@ namespace WoxLiberKey
         {
             Apps.Clear();
 
+            if (!Directory.Exists(RootPath) || !File.Exists(Path.Combine(RootPath, @"LiberKeyTools\LiberKeyMenu\data\localapps.db.xml")))
+            {
+                return;
+            }
+
             try
             {
                 LiberKeyDB db = null;

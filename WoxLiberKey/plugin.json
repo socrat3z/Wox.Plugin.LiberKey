@@ -4,7 +4,7 @@
     "Name":"LiberKey",
     "Description":"Allows launching installed LiberKey applications",
     "Author":"socrat3z",
-    "Version":"1.0.1",
+    "Version":"1.0.2",
     "Language":"csharp",
     "Website":"https://github.com/socrat3z/Wox.Plugin.LiberKey",
     "IcoPath":"Images\\app.png",
