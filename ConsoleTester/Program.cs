@@ -11,7 +11,7 @@ namespace ConsoleApplication1
             var main = new Main();
             var query = new Query();
 
-            query.GetType().GetProperty("RawQuery").SetValue(query, "Kitty", null);
+            query.GetType().GetProperty("RawQuery").SetValue(query, "universal", null);
             query.GetType().GetProperty("Search").SetValue(query, "Search", null);
 
             main.Init(null);

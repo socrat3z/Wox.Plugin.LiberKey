@@ -27,13 +27,13 @@ namespace WoxLiberKey
         public List<Result> Query(Query query)
         {
             return LiberKey.Apps
-                .Where(game => game.Name.ToLower().Contains(query.RawQuery.ToLower()))
+                .Where(game => game.Name.ToLower().Contains(query.RawQuery.ToLower()) || game.AutoKeyWords.ToLower().Contains(query.RawQuery.ToLower()))
                 .Select(game => new Result
                 {
                     Title = game.Name,
                     SubTitle = "LiberKey application: " + game.ExePath,
                     IcoPath = "Images/app.png",
-                    Score = Score(query.RawQuery.ToLower(), game.Name, game.ExePath, game.Description),
+                    Score = Score(query.RawQuery.ToLower(), game.Name, game.ExePath, game.AutoKeyWords),
                     Action = context =>
                     {
                         Process.Start(game.ExePath);
@@ -80,10 +80,10 @@ namespace WoxLiberKey
             return new SettingsControl(Options);
         }
 
-        private int Score(string query, string name, string executableName, string description)
+        private int Score(string query, string name, string executableName, string keywords)
         {
             var score1 = StringMatcher.Score(name, query);
-            var score2 = StringMatcher.Score(description, query);
+            var score2 = StringMatcher.Score(keywords, query);
             var score3 = StringMatcher.Score(executableName, query);
             var score = new[] {score1, score2, score3}.Max();
             return score;
